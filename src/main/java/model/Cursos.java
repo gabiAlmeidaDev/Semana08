@@ -13,6 +13,7 @@ import java.util.List;
 public class Cursos {
     private static Integer idcurso = 1;
     private static List<Cursos> cursos = new ArrayList<>();
+    private List<Aluno> alunosMatriculados;
     @Setter
     private String nomeCurso;
     @Setter
@@ -27,6 +28,7 @@ public class Cursos {
         this.nomeCurso = nomeCurso;
         this.descricao = descricao;
         this.cargaHoraria = cargaHoraria;
+        this.alunosMatriculados = new ArrayList<>();
     }
 
     public static Cursos cadastrarCurso(Cursos curso) {

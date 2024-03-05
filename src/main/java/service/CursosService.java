@@ -26,7 +26,11 @@ public class CursosService {
     public List<Cursos> buscarCurso() {
         return (List<Cursos>) Cursos.getNomeCurso();
     }
-    public Cursos buscarPorId (Integer id) throws Exception {
+
+    public Cursos buscarPorId(Integer id) throws Exception {
         return Cursos.buscarPorId(id);
+    }
+
+    public void matricularAluno(Integer cursoId, Integer alunoId) {
     }
 }
