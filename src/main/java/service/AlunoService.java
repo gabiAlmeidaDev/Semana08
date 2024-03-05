@@ -32,4 +32,5 @@ public class AlunoService {
     public Aluno buscarPorId (Integer id) throws Exception {
         return Aluno.buscarPorId(id);
     }
+
 }
