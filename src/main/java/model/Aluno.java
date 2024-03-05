@@ -19,6 +19,7 @@ public class Aluno {
     private LocalDate dataNascimento;
 
     public static synchronized int obterProximoId() {
+
         return ++idAluno;
     }
 
@@ -48,7 +49,10 @@ public class Aluno {
         return aluno;
     }
 
+
     private Object getIdAluno() {
         return null;
     }
+
+
 }
